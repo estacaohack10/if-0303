@@ -1,4 +1,4 @@
-/*
+ /*
 Tabela verdade:
 true && true -> true
 true && false -> false

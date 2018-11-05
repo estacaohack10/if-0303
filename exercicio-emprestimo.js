@@ -5,6 +5,7 @@ Regras para aprovar um empréstimo:
 - Renda mínima para empréstimo é de R$1500,00 ou mais;
 - O valor do empréstimo deve estar entre R$1000,00 e 10 vezes a renda declarada;
 Seu programa deve responder "APROVADO!" ou "NÃO APROVADO!" de acordo com cliente;
+
 Bônus: Se o empréstimo for aprovado, perguntamos em quantas parcelas ele quer pagar. 
 Regras para parcela:
 - Parcelamos entre 5 e 24 meses;
@@ -12,3 +13,16 @@ Regras para parcela:
 - Se o valor de parcelas for inválido e o valor for menor que 5, o empréstimo é feito em 5 parcelas;
 - Se o valor de parcelas for inválido e o valor for maior que 24, o empréstimo é feito em 24 parcelas;
 */
+
+const idade = Number(prompt('Qual sua idade?'));
+const renda = Number(prompt('Qual sua renda?'));
+const valorEmprestimo = Number(prompt('Qual valor do empréstimo?'));
+
+if (idade >= 25 && idade <= 65 &&
+    renda >= 1500 &&
+    valorEmprestimo >= 1000 && valorEmprestimo <= renda * 10) {
+  alert('APROVADO!');
+}
+else {
+  alert('NÃO APROVADO!')
+}
